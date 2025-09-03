@@ -11,7 +11,7 @@ Struktur Folder
 /ratu-jiwa
    index.html     -> Halaman utama website
    styles.css     -> File CSS untuk tampilan
-   Folder aset untuk logo dan galeri
+   sub folder z-assets -> logo dan galeri
    logo.png       -> Logo ukuran 80px
    galeri1.jpg    -> Contoh gambar galeri
    galeri2.jpg
