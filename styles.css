@@ -1,1 +1,144 @@
-body{background:#0d1b2a;color:#FFD700;font-family:sans-serif;margin:0;line-height:1.6}header{display:flex;justify-content:space-between;align-items:center;background:#14213d;padding:10px 40px;position:sticky;top:0;z-index:1000}nav ul{list-style:none;display:flex;gap:20px}nav ul li a{text-decoration:none;color:#FFD700;font-weight:bold}nav ul li a:hover{color:#fff}section{padding:60px 20px;text-align:center;border-bottom:1px solid rgba(255,215,0,0.3)}section h2{font-size:28px;margin-bottom:15px}section p,section li{max-width:900px;margin:auto}
+/* ============ Ratu Jiwa - Styles Final ============ */
+
+/* Reset dasar */
+* {
+    batas: 0;
+    bantalan: 0;
+    ukuran kotak: kotak perbatasan;
+}
+
+/* Badan */
+badan {
+    font-family: sans-serif;
+    tinggi garis: 1.6;
+    warna latar belakang: #0d1b2a; /* biru dongker */
+    warna: #FFD700; /* kuning emas */
+}
+
+/* Tajuk */
+tajuk {
+    tampilan: fleksibel;
+    justify-content: spasi-antara;
+    menyelaraskan-item: tengah;
+    background-color: #14213d; /* biru tua */
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+header img {
+    height: 80px;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Menu toggle untuk mobile */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0d1b2a; /* biru dongker */
+}
+
+/* Section header & paragraph */
+section h2,
+section p {
+    color: #FFD700;
+}
+
+/* Galeri */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #FFD700;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* penting supaya tidak menutupi konten */
+}
+
+/* Tombol Back to Top */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #FFD700;
+    color: #14213d;
+    border: none;
+    radius batas: 5px;
+    kursor: penunjuk;
+}
+
+/* Tautan */
+a {
+    warna: #FFD700;
+}
+
+a:hover {
+    warna: #fff;
+}
+
+/* Animasi fade-in */
+.fade-in {
+    opacity: 0;
+    animasi: fadeIn 1 detik ke depan;
+}
+
+@keyframes fadeIn {
+    ke {
+        opacity: 1;
+    }
+}
+
+/* Media query untuk menu seluler */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: kolom;
+        tampilan: tidak ada;
+    }
+
+    nav ul.show {
+        tampilan: fleksibel;
+    }
+
+    .menu-toggle {
+        tampilan: blok;
+    }
+}
